@@ -6,7 +6,7 @@ import javax.inject.Singleton
 
 @Singleton
 class DpoyPredictorService (
-  private val ballDontLieClient: BallDontLieClient
+        private val ballDontLieClient: BallDontLieClient
 ){
   fun predictDpoy(): Player {
     var seasonAverages = ballDontLieClient.getSeasonAverages()  //grabbing all the season averages from client and storing it in a variable, now we can look through and do stuff

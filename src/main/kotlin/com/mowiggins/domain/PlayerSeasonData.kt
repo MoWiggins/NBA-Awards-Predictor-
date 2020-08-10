@@ -30,6 +30,8 @@ data class PlayerSeasonData(
     return blk + dreb + oreb + reb + stl
   }
 
-
+  fun playerRating()  : Double {
+    return  ast + blk + dreb + fg3_pct + fg_pct + ft_pct + oreb + pts + stl
+  }
 
 }
